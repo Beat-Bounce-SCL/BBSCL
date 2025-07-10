@@ -25,7 +25,7 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
+                            <p v-if="i + 1 <= 50" class="type-label-lg">#{{ i + 1 }}</p>
                             <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
@@ -51,8 +51,8 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
+                            <div class="type-title-sm">FPS</div>
+                            <p>{{ level.fps || 'Any' }}</p>
                         </li>
                     </ul>
                     <h2>Records</h2>
@@ -71,7 +71,7 @@ export default {
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
                             <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
+                                <p>{{ record.hz }} FPS</p>
                             </td>
                         </tr>
                     </table>
@@ -98,30 +98,30 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>List Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Capped Devices (such as K55) aren’t allowed on the list except for Controlled Spam and other types.
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                        Only 60 FPS or above is allowed on the list.
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                        The difficulty of the challenges have to be mostly spam, you can add a triple spike or a timing at the start or at the end of the level.
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        You are not allowed to use clicking methods that are very easy to get high CPS (such as drag clicking, scroll clicking, etc, etc...).
                     </p>
                     <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
+                        You are only allowed to use 2 inputs for spamming.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        You have to record clicks in your completion, otherwise it wouldn’t count.
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        Despite the name, spam challenges can be over 30 seconds long because they aren’t considered actual challenges.
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level.
                     </p>
                 </div>
             </div>
