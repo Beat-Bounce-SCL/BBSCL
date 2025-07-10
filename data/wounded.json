@@ -8,5 +8,11 @@
     "percentToQualify": "100",
     "fps": "60",
     "records": [
+        {
+            "user": "Pixelation_GMD1",
+            "link": "https://discord.com/channels/1371111296132448396/1372574060063490130/1372574154338865152",
+            "hz": "60",
+            "percent": 100
+        }
     ]
 }
